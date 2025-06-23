@@ -8,6 +8,8 @@ public class Instantiator2D : MonoBehaviour
     [SerializeField] private Transform _parent;
     [SerializeField] private int _rows;
     [SerializeField] private int _cols;
+    [SerializeField] private int _offset1;
+    [SerializeField] private int _offset2;
 
     void Start()
     {
