@@ -6,7 +6,7 @@ public class RigidbodyPlayerController : MonoBehaviour
 {
     [SerializeField] private float _speed = 4;
     [SerializeField] private float _jumpForce = 5;
-    [SerializeField] private float _jumpHeight= 2;
+    //[SerializeField] private float _jumpHeight= 2;
 
     [SerializeField] private GroundChecker _groundChecker;
     private Rigidbody _rb;
