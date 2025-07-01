@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody _rb;
-    [SerializeField] private float _speed = 3;
+    [SerializeField] private float _initialSpeed = 3;
     [SerializeField] private GroundCheck _groundCheck;
     [SerializeField] private float _jumpForce = 5f;
     private bool _canDoubleJump = false;
+    private float _speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +53,16 @@ public class PlayerController : MonoBehaviour
                 _rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
                 _canDoubleJump = false;
             }
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            _speed = _initialSpeed;
+            _speed *= 2; // Raddoppia la velocità quando si tiene premuto Shift
+        }
+        else
+        {
+            _speed = _initialSpeed; // Ripristina la velocità normale quando Shift non è premuto
         }
 
         _rb.MovePosition(_rb.position + direction * (_speed * Time.deltaTime));
