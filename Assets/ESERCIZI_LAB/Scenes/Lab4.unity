@@ -193,7 +193,7 @@ PrefabInstance:
     - target: {fileID: 4776095220711859696, guid: 2b7a3df56cb774dab8b4d15df9b9b645,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 4776095220711859696, guid: 2b7a3df56cb774dab8b4d15df9b9b645,
         type: 3}
@@ -261,7 +261,7 @@ PrefabInstance:
     - target: {fileID: 4776095220711859696, guid: 2b7a3df56cb774dab8b4d15df9b9b645,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 4776095220711859696, guid: 2b7a3df56cb774dab8b4d15df9b9b645,
         type: 3}
@@ -564,6 +564,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e1e015dea7e84053bd97bc059fe38e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 1618892637018978525, guid: 8183651c5cf354b2981be55a1c7e3f54,
+    type: 3}
+  _spawnPoint: {fileID: 978904208}
+  _radius: 0.5
 --- !u!1 &1087646721
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +818,7 @@ PrefabInstance:
     - target: {fileID: 4776095220711859696, guid: 2b7a3df56cb774dab8b4d15df9b9b645,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 4776095220711859696, guid: 2b7a3df56cb774dab8b4d15df9b9b645,
         type: 3}
@@ -888,7 +892,7 @@ PrefabInstance:
     - target: {fileID: 4776095220711859696, guid: 2b7a3df56cb774dab8b4d15df9b9b645,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 4776095220711859696, guid: 2b7a3df56cb774dab8b4d15df9b9b645,
         type: 3}
@@ -978,7 +982,7 @@ Transform:
   m_GameObject: {fileID: 1804470309}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
