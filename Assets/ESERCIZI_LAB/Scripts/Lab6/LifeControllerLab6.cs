@@ -29,7 +29,8 @@ public class LifeControllerLab6 : MonoBehaviour
         if (_life <= 0)
         {
             _onDeath?.Invoke(); // questa parte a destra non la esegue se _onDeath è null --> abbreviazione di (if (_onDeath != null) _onDeath.Invoke();)
-            Destroy(gameObject);
+                                //Destroy(gameObject);
+            Debug.Log("Player is dead");
         }
     }
 }
